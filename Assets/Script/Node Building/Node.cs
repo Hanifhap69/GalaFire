@@ -4,8 +4,8 @@ public class Node : MonoBehaviour
 {
 
     public Color hoverColor;
-    public Vector3 positionOffset;
-
+    public Vector3 positionOffset, rotation;
+    
     private GameObject turret;
 
     private Renderer rend;
