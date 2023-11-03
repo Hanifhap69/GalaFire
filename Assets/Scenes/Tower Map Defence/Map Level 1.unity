@@ -9662,6 +9662,89 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 296129155}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &300353975
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -574177562677880077, guid: 650eb6ec530fe754b9df0ee643ef6525,
+        type: 3}
+      propertyPath: range
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 964610784889127606, guid: 650eb6ec530fe754b9df0ee643ef6525,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 964610784889127606, guid: 650eb6ec530fe754b9df0ee643ef6525,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 964610784889127606, guid: 650eb6ec530fe754b9df0ee643ef6525,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 964610784889127606, guid: 650eb6ec530fe754b9df0ee643ef6525,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 964610784889127606, guid: 650eb6ec530fe754b9df0ee643ef6525,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -23.8192
+      objectReference: {fileID: 0}
+    - target: {fileID: 964610784889127606, guid: 650eb6ec530fe754b9df0ee643ef6525,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6963643
+      objectReference: {fileID: 0}
+    - target: {fileID: 964610784889127606, guid: 650eb6ec530fe754b9df0ee643ef6525,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.12278779
+      objectReference: {fileID: 0}
+    - target: {fileID: 964610784889127606, guid: 650eb6ec530fe754b9df0ee643ef6525,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6963643
+      objectReference: {fileID: 0}
+    - target: {fileID: 964610784889127606, guid: 650eb6ec530fe754b9df0ee643ef6525,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.12278779
+      objectReference: {fileID: 0}
+    - target: {fileID: 964610784889127606, guid: 650eb6ec530fe754b9df0ee643ef6525,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 964610784889127606, guid: 650eb6ec530fe754b9df0ee643ef6525,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 964610784889127606, guid: 650eb6ec530fe754b9df0ee643ef6525,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7197409988799983594, guid: 650eb6ec530fe754b9df0ee643ef6525,
+        type: 3}
+      propertyPath: m_Name
+      value: Tower.2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 650eb6ec530fe754b9df0ee643ef6525, type: 3}
 --- !u!1001 &305387079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50646,6 +50729,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2078844507}
     m_Modifications:
+    - target: {fileID: -2643683492269616004, guid: cda7f99df6ecad9488bf778216bdf071,
+        type: 3}
+      propertyPath: positionOffset.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8447350184752227462, guid: cda7f99df6ecad9488bf778216bdf071,
         type: 3}
       propertyPath: m_Name
@@ -61647,7 +61735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066f464597ee7064fa36ead58c7e4a66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardTurretPrefab: {fileID: 6440843525720602931, guid: 008783b187219524d8e582fc38839f3b,
+  standardTurretPrefab: {fileID: 7197409988799983594, guid: 650eb6ec530fe754b9df0ee643ef6525,
     type: 3}
 --- !u!4 &1702700988
 Transform:
@@ -81988,3 +82076,4 @@ SceneRoots:
   - {fileID: 436516695}
   - {fileID: 369379059}
   - {fileID: 1556531740}
+  - {fileID: 300353975}
