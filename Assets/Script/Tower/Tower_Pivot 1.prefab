@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3995723222447355456}
+  - component: {fileID: 7438096998483881339}
   m_Layer: 0
   m_Name: Tower_Pivot 1
   m_TagString: Untagged
@@ -32,6 +33,22 @@ Transform:
   - {fileID: 8728772913289413156}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7438096998483881339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4685279829354322961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6e54c67028c4342995ddc01d9980bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 15
+  enemyTag: Enemy
+  partToRotate: {fileID: 8728772913289413156}
+  turnSpeed: 10
 --- !u!1001 &8376740190902354066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43,12 +60,17 @@ PrefabInstance:
     - target: {fileID: -574177562677880077, guid: 650eb6ec530fe754b9df0ee643ef6525,
         type: 3}
       propertyPath: range
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -574177562677880077, guid: 650eb6ec530fe754b9df0ee643ef6525,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -574177562677880077, guid: 650eb6ec530fe754b9df0ee643ef6525,
+        type: 3}
+      propertyPath: partToRotate
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 964610784889127606, guid: 650eb6ec530fe754b9df0ee643ef6525,
         type: 3}
@@ -120,7 +142,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower.2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -574177562677880077, guid: 650eb6ec530fe754b9df0ee643ef6525, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
