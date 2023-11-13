@@ -30657,7 +30657,6 @@ GameObject:
   m_Component:
   - component: {fileID: 820718678}
   - component: {fileID: 820718677}
-  - component: {fileID: 820718679}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -30681,7 +30680,7 @@ MonoBehaviour:
     type: 3}
   spawnPoint: {fileID: 764106514}
   timeBetweenWaves: 10
-  waveCountdownText: {fileID: 0}
+  waveCountdownText: {fileID: 1980902993}
 --- !u!4 &820718678
 Transform:
   m_ObjectHideFlags: 0
@@ -30697,23 +30696,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &820718679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 820718676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8d31b3dd8e77d8428c2ca1bf132ebeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 8197461006427861979, guid: 811bdab00c0fe094fa4e6c1105ca95d1,
-    type: 3}
-  spawnPoint: {fileID: 764106514}
-  timeBetweenWaves: 40
-  waveCountdownText: {fileID: 1980902993}
 --- !u!1001 &823373507
 PrefabInstance:
   m_ObjectHideFlags: 0

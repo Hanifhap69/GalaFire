@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3995723222447355456}
-  - component: {fileID: 7438096998483881339}
+  - component: {fileID: 5783348928722401193}
   m_Layer: 0
   m_Name: Tower_Pivot 1
   m_TagString: Untagged
@@ -31,9 +31,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8728772913289413156}
+  - {fileID: 4816081589111462731}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7438096998483881339
+--- !u!114 &5783348928722401193
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -46,9 +47,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 15
+  fireRate: 1
   enemyTag: Enemy
-  partToRotate: {fileID: 8728772913289413156}
+  partToRotate: {fileID: 0}
   turnSpeed: 10
+  bulletPrefab: {fileID: 185070, guid: e40eae5ee32351c4ca6d8958994d139e, type: 3}
+  firePoint: {fileID: 4816081589111462731}
+--- !u!1 &8174587321059802041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4816081589111462731}
+  m_Layer: 0
+  m_Name: FirePonit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4816081589111462731
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8174587321059802041}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.78, y: 4.53, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3995723222447355456}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &8376740190902354066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64,9 +99,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -574177562677880077, guid: 650eb6ec530fe754b9df0ee643ef6525,
         type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 4816081589111462731}
+    - target: {fileID: -574177562677880077, guid: 650eb6ec530fe754b9df0ee643ef6525,
+        type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -574177562677880077, guid: 650eb6ec530fe754b9df0ee643ef6525,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 185070, guid: e40eae5ee32351c4ca6d8958994d139e, type: 3}
     - target: {fileID: -574177562677880077, guid: 650eb6ec530fe754b9df0ee643ef6525,
         type: 3}
       propertyPath: partToRotate
