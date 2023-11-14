@@ -16,9 +16,7 @@ public class Turret : MonoBehaviour
 
     public string enemyTag = "Enemy";
 
-    public Transform partToRotate;
-    public float turnSpeed = 10f;
-
+    
     public GameObject bulletPrefab;
     public Transform firePoint;
 
@@ -62,9 +60,7 @@ public class Turret : MonoBehaviour
 
         //Target lock on
         Vector3 dir = target.position - transform.position;
-        Quaternion lookRotation = Quaternion.LookRotation(dir);
-        Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * turnSpeed).eulerAngles;
-        partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
+        
 
         if (fireCountdown <= 0f)
         {
