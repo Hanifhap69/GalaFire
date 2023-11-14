@@ -26,7 +26,7 @@ public class BuildManager : MonoBehaviour
     {
         if (PlayerStats.Money < turretToBuild.cost)
         {
-            Debug.Log("Not enough money to build that!");
+            Debug.Log("You Don't Have Enough Money!!");
             return;
         }
 
