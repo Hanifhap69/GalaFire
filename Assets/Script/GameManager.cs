@@ -1,25 +1,34 @@
 using UnityEngine;
 using System.Collections;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour
+{
 
-	private bool gameEnded = false;
+    public static bool GameIsOver;
 
-	// Update is called once per frame
-	void Update () {
-		if (gameEnded)
-			return;
+    public GameObject gameOverUI;
 
-		if (PlayerStats.Lives <= 0)
-		{
-			EndGame();
-		}
-	}
+    void Start()
+    {
+        GameIsOver = false;
+    }
 
-	void EndGame ()
-	{
-		gameEnded = true;
-		Debug.Log("Game Over!");
-	}
+    // Update is called once per frame
+    void Update()
+    {
+        if (GameIsOver)
+            return;
+
+        if (PlayerStats.Lives <= 0)
+        {
+            EndGame();
+        }
+    }
+
+    void EndGame()
+    {
+        GameIsOver = true;
+        gameOverUI.SetActive(true);
+    }
 
 }

@@ -34,7 +34,7 @@ public class WaveSpawner : MonoBehaviour
     IEnumerator SpawnWave()
     {
         waveIndex++;
-
+        
         for (int i = 0; i < waveIndex; i++)
         {
             SpawnEnemy();
@@ -48,3 +48,4 @@ public class WaveSpawner : MonoBehaviour
     }
 
 }
+
