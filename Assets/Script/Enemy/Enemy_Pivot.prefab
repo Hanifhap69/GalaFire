@@ -46,6 +46,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+  health: 100
+  value: 12
+  deathEffect: {fileID: 1000010680075956, guid: 7740cb3f43469024eb7132f0f9f51979,
+    type: 3}
 --- !u!1 &5292508419584295488
 GameObject:
   m_ObjectHideFlags: 0
