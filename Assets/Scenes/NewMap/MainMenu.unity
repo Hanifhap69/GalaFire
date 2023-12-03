@@ -1433,7 +1433,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: Level1
-  sceneFader: {fileID: 0}
 --- !u!4 &1980727593
 Transform:
   m_ObjectHideFlags: 0

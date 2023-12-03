@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8076117297160352969}
   - component: {fileID: 1758121518596703827}
   - component: {fileID: 2937409862030976090}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8492721374194270379}
   - component: {fileID: 219514992959191101}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: ScreenFader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 6092911564001186798}
   - component: {fileID: 2625296995691982459}
   - component: {fileID: 2574277765008722843}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
