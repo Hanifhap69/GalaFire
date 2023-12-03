@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5889522527525803972}
   - component: {fileID: 3958514137025632955}
+  - component: {fileID: 9004814329252990027}
   m_Layer: 0
   m_Name: Enemy_Pivot
   m_TagString: Enemy
@@ -46,13 +47,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b07a9a24812080248a364cfc3fb3b851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 5
+  startSpeed: 1
   speed: 1
   startHealth: 100
   worth: 25
   deathEffect: {fileID: 1000010680075956, guid: 7740cb3f43469024eb7132f0f9f51979,
     type: 3}
-  healthBar: {fileID: 5588937227345352030}
+  HealthBar: {fileID: 5588937227345352030}
+--- !u!114 &9004814329252990027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121035135083972753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9bb8d0de146c8e41b6eb80bfa3ba6b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2425619386902633863
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +346,7 @@ GameObject:
   - component: {fileID: 5823346310541692143}
   - component: {fileID: 5588937227345352030}
   m_Layer: 5
-  m_Name: HealthBar
+  m_Name: healthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
