@@ -4,14 +4,17 @@ using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
-
-    public static int EnemiesAlive = 0;
+    public static int EnemiesAlive;
+    void Start()
+    {
+        EnemiesAlive = 0;
+    }
 
     public Wave[] waves;
 
     public Transform spawnPoint;
 
-    public float timeBetweenWaves = 5f;
+    public float timeBetweenWaves = 2f;
     private float countdown = 2f;
 
     public Text waveCountdownText;
