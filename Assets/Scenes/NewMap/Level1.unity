@@ -3085,17 +3085,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - enemy: {fileID: 121035135083972753, guid: 0f72f08a778863e42a02bc07427537f3, type: 3}
-    count: 8
-    rate: 6
-  - enemy: {fileID: 121035135083972753, guid: 0f72f08a778863e42a02bc07427537f3, type: 3}
-    count: 8
-    rate: 4
-  - enemy: {fileID: 121035135083972753, guid: 0f72f08a778863e42a02bc07427537f3, type: 3}
-    count: 12
-    rate: 2
+  - spawnRate: 2
+    enemies:
+    - enemy: {fileID: 121035135083972753, guid: 0f72f08a778863e42a02bc07427537f3,
+        type: 3}
+      count: 4
+  - spawnRate: 2
+    enemies:
+    - enemy: {fileID: 121035135083972753, guid: 0f72f08a778863e42a02bc07427537f3,
+        type: 3}
+      count: 8
   spawnPoint: {fileID: 991677221}
-  timeBetweenWaves: 5
+  timeBetweenWaves: 2
   waveCountdownText: {fileID: 1728036374}
 --- !u!114 &534062669
 MonoBehaviour:

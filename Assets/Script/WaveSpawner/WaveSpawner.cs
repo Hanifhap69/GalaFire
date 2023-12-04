@@ -47,20 +47,20 @@ public class WaveSpawner : MonoBehaviour
         PlayerStats.Rounds++;
 
         Wave wave = waves[waveIndex];
-
-        for (int i = 0; i < wave.count; i++)
+        for (int z = 0; z < wave.enemies.Length; z++)
         {
-            SpawnEnemy(wave.enemy);
-            yield return new WaitForSeconds(1f / wave.rate);
+            for (int i = 0; i < wave.enemies[z].count; i++)
+            {
+                SpawnEnemy(wave.enemies[z].enemy);
+                yield return new WaitForSeconds(1f / wave.spawnRate);
+            }
+            if (waveIndex == waves.Length)
+            {
+                Debug.Log("TODO - End Level");
+                this.enabled = false;
+            }
         }
-
         waveIndex++;
-
-        if (waveIndex == waves.Length)
-        {
-            Debug.Log("LEVEL WON!");
-            this.enabled = false;
-        }
     }
 
     void SpawnEnemy(GameObject enemy)
