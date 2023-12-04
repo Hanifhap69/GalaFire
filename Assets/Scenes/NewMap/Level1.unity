@@ -3237,7 +3237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - spawnRate: 2
+  - spawnRate: 1
     enemies:
     - enemy: {fileID: 121035135083972753, guid: 0f72f08a778863e42a02bc07427537f3,
         type: 3}

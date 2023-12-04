@@ -26,7 +26,8 @@ public class PauseMenu : MonoBehaviour {
 		}
 	}
 
-	public void Retry ()
+    
+    public void Retry ()
 	{
 		Toggle();
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

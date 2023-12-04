@@ -12,7 +12,11 @@ public class WaveSpawner : MonoBehaviour
 
     public Wave[] waves;
 
+    public GameObject winPanel;
+
     public Transform spawnPoint;
+
+    public bool waveComplete = false; 
 
     public float timeBetweenWaves = 2f;
     private float countdown = 2f;
@@ -21,18 +25,34 @@ public class WaveSpawner : MonoBehaviour
 
     private int waveIndex = 0;
 
+    public void WaveFinish()
+    {
+        winPanel.SetActive(true);
+
+    }
+
     void Update()
     {
         if (EnemiesAlive > 0)
         {
+            Debug.Log("test");
             return;
         }
 
         if (countdown <= 0f)
         {
-            StartCoroutine(SpawnWave());
-            countdown = timeBetweenWaves;
-            return;
+            if (waveIndex >= waves.Length) waveComplete = true;
+            if (waveComplete)
+            {
+                WaveFinish();
+            }
+            else
+            {
+                StartCoroutine(SpawnWave());
+                countdown = timeBetweenWaves;
+                return;
+            }
+            
         }
 
         countdown -= Time.deltaTime;
@@ -41,6 +61,7 @@ public class WaveSpawner : MonoBehaviour
 
         waveCountdownText.text = string.Format("{0:00.00}", countdown);
     }
+
 
     IEnumerator SpawnWave()
     {
