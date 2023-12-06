@@ -28,6 +28,7 @@ public class WaveSpawner : MonoBehaviour
     public void WaveFinish()
     {
         winPanel.SetActive(true);
+        
 
     }
 
