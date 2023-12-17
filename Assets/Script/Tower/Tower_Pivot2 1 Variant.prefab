@@ -219,7 +219,8 @@ MonoBehaviour:
   range: 1.5
   fireRate: 0.5
   enemyTag: Enemy
-  bulletPrefab: {fileID: 185070, guid: e40eae5ee32351c4ca6d8958994d139e, type: 3}
+  bulletPrefab: {fileID: 971909828696769238, guid: 2790962a2a590f641938f82c0cbb414a,
+    type: 3}
   firePoint: {fileID: 2156169131108425412}
 --- !u!1 &3335934828356222518
 GameObject:
